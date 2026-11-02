@@ -1,0 +1,1267 @@
+/* =========================================================
+   ALCOCOA — SAVOIR-FAIRE
+   VERSION FINALE
+   ========================================================= */
+
+/* =========================================================
+   1. BASE / LARGEUR GLOBALE
+   ========================================================= */
+
+html {
+    width: 100%;
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    width: 100%;
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background: #ffffff;
+    color: #24140d;
+    font-family: 'Montserrat', sans-serif;
+}
+
+main {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+}
+
+main,
+section,
+header,
+footer,
+div {
+    max-width: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* =========================================================
+   2. CONTENEURS
+   ========================================================= */
+
+.knowhow-hero-container,
+.expertise-container,
+.process-container,
+.products-knowhow-container,
+.quality-container,
+.contact-container {
+    width: min(1280px, 94%);
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* =========================================================
+   3. HERO
+   ========================================================= */
+
+.knowhow-hero {
+    position: relative;
+    width: 100%;
+    height: 390px;
+    min-height: 390px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 92% 18%,
+            rgba(160, 91, 30, 0.32) 0%,
+            rgba(160, 91, 30, 0.12) 15%,
+            transparent 32%
+        ),
+        linear-gradient(
+            110deg,
+            #211d1e 0%,
+            #242021 52%,
+            #1d1a1b 100%
+        );
+}
+
+.knowhow-hero::before {
+    content: "";
+    position: absolute;
+
+    width: 430px;
+    height: 430px;
+
+    right: -170px;
+    top: -250px;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(223, 192, 131, 0.08);
+
+    box-shadow:
+        0 0 100px rgba(171, 96, 25, 0.10);
+
+    pointer-events: none;
+}
+
+.knowhow-hero::after {
+    content: "";
+    position: absolute;
+
+    width: 260px;
+    height: 260px;
+
+    right: 30px;
+    top: -120px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(184, 103, 31, 0.15),
+            transparent 68%
+        );
+
+    pointer-events: none;
+}
+
+.knowhow-hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(25, 21, 22, 0.15),
+            transparent 70%
+        );
+
+    pointer-events: none;
+}
+
+.knowhow-hero-container {
+    position: relative;
+    z-index: 2;
+
+    padding-top: 70px;
+    padding-bottom: 55px;
+}
+
+.knowhow-breadcrumb {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    margin-bottom: 27px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.knowhow-breadcrumb a {
+    color: #bdb9bb;
+    transition: color 0.25s ease;
+}
+
+.knowhow-breadcrumb a:hover {
+    color: #dfc083;
+}
+
+.knowhow-breadcrumb span {
+    color: #777275;
+}
+
+.knowhow-breadcrumb strong {
+    color: #d1cccf;
+    font-weight: 500;
+}
+
+.knowhow-hero-content {
+    max-width: 700px;
+}
+
+.knowhow-label {
+    display: none;
+}
+
+.knowhow-hero h1 {
+    margin: 0 0 22px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(48px, 5.5vw, 72px);
+    line-height: 0.98;
+    letter-spacing: -3.5px;
+    font-weight: 600;
+
+    color: #ffffff;
+}
+
+.knowhow-hero h1 strong {
+    display: inline;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.knowhow-hero-content > p {
+    max-width: 650px;
+
+    margin: 0;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.75;
+
+    color: #c8c4c5;
+}
+
+
+/* =========================================================
+   4. EXPERTISE
+   ========================================================= */
+
+.expertise-section {
+    width: 100%;
+    padding: 110px 0;
+
+    background: #ffffff;
+}
+
+.expertise-container {
+    display: grid;
+    grid-template-columns: 0.95fr 1.05fr;
+    gap: 85px;
+
+    align-items: center;
+}
+
+
+/* IMAGE */
+
+.expertise-visual {
+    position: relative;
+    min-height: 570px;
+
+    overflow: hidden;
+
+    background: #24140d;
+}
+
+.expertise-visual img {
+    width: 100%;
+    height: 570px;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.6s ease;
+}
+
+.expertise-visual:hover img {
+    transform: scale(1.035);
+}
+
+.expertise-image-tag {
+    position: absolute;
+
+    left: 30px;
+    bottom: 30px;
+
+    z-index: 2;
+
+    color: #ffffff;
+}
+
+.expertise-image-tag span {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+    color: #dfc083;
+}
+
+.expertise-image-tag p {
+    max-width: 280px;
+
+    margin: 0;
+
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    line-height: 1.25;
+
+    color: #ffffff;
+}
+
+
+/* CONTENU */
+
+.expertise-content {
+    padding-right: 15px;
+}
+
+.expertise-label,
+.quality-label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    margin-bottom: 24px;
+
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+    color: #c59a55;
+}
+
+.expertise-label span,
+.quality-label span {
+    display: block;
+
+    width: 30px;
+    height: 2px;
+
+    background: #c59a55;
+}
+
+.expertise-content h2,
+.quality-content h2 {
+    margin: 0 0 25px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(34px, 4vw, 52px);
+    line-height: 1.08;
+    letter-spacing: -2px;
+    font-weight: 500;
+
+    color: #24140d;
+}
+
+.expertise-content h2 strong,
+.quality-content h2 strong {
+    font-weight: 600;
+    color: #4b2919;
+}
+
+.expertise-intro {
+    max-width: 620px;
+
+    margin: 0 0 38px;
+
+    font-size: 14px;
+    line-height: 1.85;
+
+    color: #756c66;
+}
+
+
+/* LISTE EXPERTISE */
+
+.expertise-list {
+    border-top: 1px solid rgba(75, 41, 25, 0.14);
+}
+
+.expertise-item {
+    display: grid;
+    grid-template-columns: 45px 1fr;
+    gap: 20px;
+
+    padding: 23px 0;
+
+    border-bottom: 1px solid rgba(75, 41, 25, 0.14);
+}
+
+.expertise-number {
+    padding-top: 3px;
+
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+    color: #c59a55;
+}
+
+.expertise-item h3 {
+    margin: 0 0 7px;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    color: #24140d;
+}
+
+.expertise-item p {
+    margin: 0;
+
+    font-size: 12px;
+    line-height: 1.7;
+
+    color: #756c66;
+}
+
+
+/* =========================================================
+   5. PROCESSUS DE TRANSFORMATION
+   ========================================================= */
+
+.process-section {
+    width: 100%;
+    padding: 110px 0 120px;
+
+    background: #f7f1e7;
+}
+
+.process-header {
+    max-width: 720px;
+    margin-bottom: 45px;
+}
+
+.process-label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    margin-bottom: 24px;
+
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+    color: #c59a55;
+}
+
+.process-label span {
+    width: 30px;
+    height: 2px;
+
+    background: #c59a55;
+}
+
+.process-header h2 {
+    margin: 0 0 18px;
+
+    font-size: clamp(34px, 4vw, 52px);
+    line-height: 1.08;
+    letter-spacing: -2px;
+    font-weight: 500;
+
+    color: #24140d;
+}
+
+.process-header h2 strong {
+    font-weight: 600;
+    color: #4b2919;
+}
+
+.process-header p {
+    margin: 0;
+
+    font-size: 14px;
+    line-height: 1.8;
+
+    color: #756c66;
+}
+
+
+/* GRILLE */
+
+.process-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1.45fr;
+
+    width: 100%;
+
+    margin-top: 45px;
+
+    background: #f5efe5;
+}
+
+
+/* IMAGE */
+
+.process-image {
+    position: relative;
+
+    min-height: 560px;
+
+    overflow: hidden;
+
+    background: #24140d;
+}
+
+.process-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.6s ease;
+}
+
+.process-image:hover img {
+    transform: scale(1.04);
+}
+
+.process-image-overlay {
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(20, 12, 8, 0.90),
+            rgba(20, 12, 8, 0.30) 55%,
+            rgba(20, 12, 8, 0.05)
+        );
+}
+
+.process-image-caption {
+    position: absolute;
+
+    left: 30px;
+    bottom: 30px;
+
+    z-index: 2;
+
+    color: #ffffff;
+}
+
+.process-image-caption span {
+    display: block;
+
+    margin-bottom: 9px;
+
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+    color: #dfc083;
+}
+
+.process-image-caption p {
+    margin: 0;
+
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    line-height: 1.2;
+
+    color: #ffffff;
+}
+
+
+/* ETAPES */
+
+.process-steps {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.process-card {
+    position: relative;
+
+    display: flex;
+
+    gap: 18px;
+
+    padding: 30px;
+
+    background: #f5efe5;
+
+    border-left: 1px solid rgba(75, 41, 25, 0.10);
+    border-bottom: 1px solid rgba(75, 41, 25, 0.10);
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease;
+}
+
+.process-card:hover {
+    background: #eee3d2;
+}
+
+.process-number {
+    flex-shrink: 0;
+
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+    color: #c59a55;
+}
+
+.process-card-content h3 {
+    margin: 0 0 10px;
+
+    font-size: 17px;
+    font-weight: 600;
+
+    color: #24140d;
+}
+
+.process-card-content p {
+    margin: 0;
+
+    font-size: 12px;
+    line-height: 1.7;
+
+    color: #756c66;
+}
+
+
+/* =========================================================
+   6. PRODUITS
+   ========================================================= */
+
+.products-knowhow-section {
+    width: 100%;
+    padding: 105px 0;
+
+    background: #ffffff;
+}
+
+.products-knowhow-header {
+    max-width: 720px;
+
+    margin-bottom: 42px;
+}
+
+.products-knowhow-label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    margin-bottom: 24px;
+
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+    color: #c59a55;
+}
+
+.products-knowhow-label span {
+    width: 30px;
+    height: 2px;
+
+    background: #c59a55;
+}
+
+.products-knowhow-header h2 {
+    margin: 0 0 17px;
+
+    font-size: clamp(34px, 4vw, 52px);
+    line-height: 1.08;
+    letter-spacing: -2px;
+    font-weight: 500;
+
+    color: #24140d;
+}
+
+.products-knowhow-header h2 strong {
+    font-weight: 600;
+    color: #4b2919;
+}
+
+.products-knowhow-header p {
+    margin: 0;
+
+    font-size: 14px;
+    line-height: 1.8;
+
+    color: #756c66;
+}
+
+
+/* GRILLE PRODUITS */
+
+.products-knowhow-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 18px;
+
+    width: 100%;
+}
+
+
+/* CARTE */
+
+.product-knowhow-card {
+    display: block;
+
+    overflow: hidden;
+
+    text-decoration: none;
+
+    background: #ffffff;
+
+    border: 1px solid rgba(75, 41, 25, 0.08);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.product-knowhow-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 14px 30px rgba(36, 20, 13, 0.10);
+}
+
+
+/* IMAGE PRODUIT */
+
+.product-knowhow-image {
+    position: relative;
+
+    height: 190px;
+
+    overflow: hidden;
+
+    background: #24140d;
+}
+
+.product-knowhow-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.5s ease;
+}
+
+.product-knowhow-card:hover
+.product-knowhow-image img {
+    transform: scale(1.05);
+}
+
+.product-knowhow-overlay {
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(20, 12, 8, 0.45),
+            transparent 60%
+        );
+}
+
+.product-knowhow-number {
+    position: absolute;
+
+    top: 14px;
+    left: 14px;
+
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+
+    color: #ffffff;
+}
+
+.product-knowhow-arrow {
+    position: absolute;
+
+    right: 14px;
+    bottom: 14px;
+
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(255,255,255,0.4);
+    border-radius: 50%;
+
+    color: #ffffff;
+    font-size: 11px;
+
+    transition: all 0.3s ease;
+}
+
+.product-knowhow-card:hover
+.product-knowhow-arrow {
+    background: #c59a55;
+    border-color: #c59a55;
+}
+
+
+/* TEXTE PRODUIT */
+
+.product-knowhow-content {
+    padding: 17px 18px 19px;
+}
+
+.product-knowhow-content > span {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+
+    color: #c59a55;
+}
+
+.product-knowhow-content h3 {
+    margin: 0 0 7px;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    color: #24140d;
+}
+
+.product-knowhow-content p {
+    margin: 0;
+
+    font-size: 10px;
+    line-height: 1.6;
+
+    color: #756c66;
+}
+
+
+/* =========================================================
+   7. QUALITÉ
+   ========================================================= */
+
+.quality-section {
+    width: 100%;
+    padding: 110px 0;
+
+    background: #f7f1e7;
+}
+
+.quality-container {
+    display: grid;
+
+    grid-template-columns: 0.9fr 1.1fr;
+
+    gap: 80px;
+
+    align-items: center;
+}
+
+.quality-content {
+    max-width: 580px;
+}
+
+.quality-content > p {
+    margin: 0 0 18px;
+
+    font-size: 13px;
+    line-height: 1.85;
+
+    color: #756c66;
+}
+
+.quality-content > p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* IMAGE QUALITE */
+
+.quality-visual {
+    position: relative;
+
+    min-height: 500px;
+
+    overflow: hidden;
+
+    background: #24140d;
+}
+
+.quality-visual img {
+    width: 100%;
+    height: 500px;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.6s ease;
+}
+
+.quality-visual:hover img {
+    transform: scale(1.035);
+}
+
+.quality-overlay {
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(20, 12, 8, 0.85),
+            transparent 65%
+        );
+}
+
+.quality-caption {
+    position: absolute;
+
+    left: 30px;
+    bottom: 30px;
+
+    z-index: 2;
+
+    color: #ffffff;
+}
+
+.quality-caption span {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+    color: #dfc083;
+}
+
+.quality-caption p {
+    max-width: 340px;
+
+    margin: 0;
+
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    line-height: 1.2;
+
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   8. CONTACT
+   ========================================================= */
+
+.contact-section {
+    width: 100%;
+}
+
+
+/* =========================================================
+   9. RESPONSIVE — TABLETTE
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+    .knowhow-hero-container,
+    .expertise-container,
+    .process-container,
+    .products-knowhow-container,
+    .quality-container,
+    .contact-container {
+        width: 92%;
+    }
+
+    .expertise-container {
+        gap: 55px;
+    }
+
+    .quality-container {
+        gap: 50px;
+    }
+
+    .process-grid {
+        grid-template-columns: 1fr 1.2fr;
+    }
+
+    .process-card {
+        padding: 25px;
+    }
+}
+
+
+/* =========================================================
+   10. RESPONSIVE — TABLETTE PETITE
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    /* EXPERTISE */
+
+    .expertise-container {
+        grid-template-columns: 1fr;
+
+        gap: 55px;
+    }
+
+    .expertise-content {
+        padding-right: 0;
+    }
+
+    .expertise-visual {
+        min-height: 480px;
+    }
+
+    .expertise-visual img {
+        height: 480px;
+    }
+
+
+    /* PROCESSUS */
+
+    .process-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .process-image {
+        min-height: 450px;
+    }
+
+    .process-steps {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* PRODUITS */
+
+    .products-knowhow-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* QUALITE */
+
+    .quality-container {
+        grid-template-columns: 1fr;
+
+        gap: 55px;
+    }
+
+    .quality-content {
+        max-width: 100%;
+    }
+
+    .quality-visual {
+        min-height: 450px;
+    }
+
+    .quality-visual img {
+        height: 450px;
+    }
+}
+
+
+/* =========================================================
+   11. RESPONSIVE — MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    /* GLOBAL */
+
+    .knowhow-hero-container,
+    .expertise-container,
+    .process-container,
+    .products-knowhow-container,
+    .quality-container,
+    .contact-container {
+        width: 90%;
+    }
+
+
+    /* HERO */
+
+    .knowhow-hero {
+        height: 360px;
+        min-height: 360px;
+    }
+
+    .knowhow-hero-container {
+        padding-top: 55px;
+        padding-bottom: 45px;
+    }
+
+    .knowhow-breadcrumb {
+        gap: 7px;
+
+        margin-bottom: 23px;
+
+        font-size: 10px;
+    }
+
+    .knowhow-hero h1 {
+        margin-bottom: 18px;
+
+        font-size: 40px;
+        line-height: 1.02;
+
+        letter-spacing: -2px;
+    }
+
+    .knowhow-hero-content > p {
+        max-width: 100%;
+
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
+
+    /* SECTIONS */
+
+    .expertise-section,
+    .process-section,
+    .products-knowhow-section,
+    .quality-section {
+        padding: 75px 0;
+    }
+
+
+    /* TITRES */
+
+    .expertise-content h2,
+    .quality-content h2,
+    .process-header h2,
+    .products-knowhow-header h2 {
+        font-size: 32px;
+        letter-spacing: -1.4px;
+    }
+
+
+    /* EXPERTISE */
+
+    .expertise-visual {
+        min-height: 380px;
+    }
+
+    .expertise-visual img {
+        height: 380px;
+    }
+
+    .expertise-image-tag {
+        left: 22px;
+        bottom: 22px;
+    }
+
+    .expertise-image-tag p {
+        font-size: 21px;
+    }
+
+
+    /* PROCESS */
+
+    .process-image {
+        min-height: 380px;
+    }
+
+    .process-image-caption {
+        left: 22px;
+        bottom: 22px;
+    }
+
+    .process-image-caption p {
+        font-size: 21px;
+    }
+
+    .process-steps {
+        grid-template-columns: 1fr;
+    }
+
+    .process-card {
+        padding: 24px 20px;
+    }
+
+
+    /* PRODUITS */
+
+    .products-knowhow-grid {
+        grid-template-columns: 1fr;
+
+        gap: 16px;
+    }
+
+    .product-knowhow-image {
+        height: 210px;
+    }
+
+
+    /* QUALITE */
+
+    .quality-visual {
+        min-height: 380px;
+    }
+
+    .quality-visual img {
+        height: 380px;
+    }
+
+    .quality-caption {
+        left: 22px;
+        bottom: 22px;
+    }
+
+    .quality-caption p {
+        font-size: 21px;
+    }
+}
+
+
+/* =========================================================
+   12. TRÈS PETITS ÉCRANS
+   ========================================================= */
+
+@media (max-width: 380px) {
+
+    .knowhow-hero h1 {
+        font-size: 35px;
+    }
+
+    .expertise-content h2,
+    .quality-content h2,
+    .process-header h2,
+    .products-knowhow-header h2 {
+        font-size: 29px;
+    }
+
+    .expertise-item {
+        grid-template-columns: 35px 1fr;
+        gap: 12px;
+    }
+
+    .process-card {
+        gap: 13px;
+    }
+}

@@ -1,0 +1,2227 @@
+/* =========================================================
+   PAGE — QUI SOMMES-NOUS
+========================================================= */
+
+/* texture décorative */
+
+.about-page-hero::before {
+    content: "";
+
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    right: -180px;
+    top: -230px;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(223, 192, 131, 0.10);
+}
+
+
+.about-page-hero::after {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(255,255,255,0.015)
+        );
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.about-page-hero-container {
+    position: relative;
+    z-index: 2;
+
+    width: min(1200px, 92%);
+    margin: 0 auto;
+
+    /* espace pour le menu fixe */
+    padding: 105px 0 55px;
+}
+
+
+/* =========================================================
+   FIL D'ARIANE
+========================================================= */
+
+.about-breadcrumb {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    margin-bottom: 27px;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 10px;
+
+}
+
+
+.about-breadcrumb a {
+
+    color: #a9a7a8;
+
+    text-decoration: none;
+
+    transition: color 0.25s ease;
+
+}
+
+
+.about-breadcrumb a:hover {
+
+    color: #dfc083;
+
+}
+
+
+.about-breadcrumb span {
+
+    color: #666367;
+
+}
+
+
+
+/* =========================================================
+   TITRE
+========================================================= */
+
+.about-page-hero h1 {
+
+    margin: 0 0 22px;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: clamp(
+        48px,
+        6vw,
+        76px
+    );
+
+    font-weight: 700;
+
+    line-height: 0.98;
+
+    letter-spacing: -3.5px;
+
+    color: #ffffff;
+
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.about-page-hero-text {
+
+    max-width: 650px;
+
+    margin: 0;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+
+    color: #c6c5c7;
+
+}
+
+
+/* =========================================================
+   BAS HERO
+========================================================= */
+
+.about-hero-bottom {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-top: 35px;
+
+}
+
+
+.about-hero-bottom span {
+
+    display: block;
+
+    width: 32px;
+
+    height: 1px;
+
+    background: #dfc083;
+
+}
+
+
+.about-hero-bottom p {
+
+    margin: 0;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 8px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+    color: #dfc083;
+
+}
+
+
+/* =========================================================
+   PLACEHOLDER TEMPORAIRE
+========================================================= */
+
+.about-placeholder {
+
+    padding: 100px 0;
+
+    background: #f7f1e7;
+
+}
+
+
+.about-placeholder-container {
+
+    width: min(1080px, 92%);
+
+    margin: 0 auto;
+
+}
+
+
+.about-placeholder-container > span {
+
+    display: block;
+
+    margin-bottom: 18px;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+    color: #8b6b2f;
+
+}
+
+
+.about-placeholder-container h2 {
+
+    max-width: 700px;
+
+    margin: 0;
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: clamp(
+        38px,
+        5vw,
+        60px
+    );
+
+    font-weight: 400;
+
+    line-height: 1.05;
+
+    color: #241c18;
+
+}
+
+
+.about-placeholder-container h2 strong {
+
+    font-weight: 700;
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .about-page-hero-container {
+        padding-top: 90px;
+    }
+
+
+
+    .about-page-hero-container {
+
+        padding: 50px 0;
+
+    }
+
+
+    .about-breadcrumb {
+
+        font-size: 8px;
+
+        gap: 6px;
+
+        margin-bottom: 22px;
+
+    }
+
+
+    .about-page-hero h1 {
+
+        font-size: 44px;
+
+        letter-spacing: -2px;
+
+    }
+
+
+    .about-page-hero-text {
+
+        font-size: 11px;
+
+    }
+
+
+    .about-placeholder {
+
+        padding: 70px 0;
+
+    }
+
+}
+
+/* =========================================================
+   NOTRE IDENTITÉ
+========================================================= */
+
+.identity-section {
+    position: relative;
+    background: #f7f1e7;
+    padding: 105px 0 115px;
+}
+
+.identity-container {
+    width: min(1080px, 92%);
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+
+    align-items: center;
+}
+
+/* ---------------------------------------------------------
+   GAUCHE
+--------------------------------------------------------- */
+
+.identity-content {
+    max-width: 560px;
+}
+
+.identity-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-bottom: 22px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+
+    color: #687719;
+}
+
+.identity-label span {
+    width: 25px;
+    height: 2px;
+
+    display: block;
+
+    background: #687719;
+}
+
+.identity-content h2 {
+    margin: 0 0 30px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(40px, 4.2vw, 57px);
+    line-height: 1.04;
+
+    font-weight: 500;
+    letter-spacing: -2px;
+
+    color: #17191d;
+}
+
+.identity-content h2 strong {
+    display: block;
+
+    font-weight: 700;
+}
+
+.identity-content p {
+    max-width: 520px;
+
+    margin: 0 0 20px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 1.8;
+
+    color: #4f4b46;
+}
+
+
+/* ---------------------------------------------------------
+   DROITE
+--------------------------------------------------------- */
+
+.identity-visual {
+    position: relative;
+}
+
+.identity-image-wrapper {
+    position: relative;
+
+    width: 100%;
+    height: 420px;
+
+    overflow: hidden;
+
+    border-radius: 18px;
+
+    background: #e9e0d2;
+
+    border: 1px solid rgba(70, 55, 40, 0.12);
+}
+
+.identity-image-wrapper::after {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            180deg,
+            transparent 55%,
+            rgba(36, 20, 13, 0.38)
+        );
+}
+
+.identity-image-wrapper img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.7s ease;
+}
+
+.identity-visual:hover .identity-image-wrapper img {
+    transform: scale(1.04);
+}
+
+
+/* ---------------------------------------------------------
+   LÉGENDE
+--------------------------------------------------------- */
+
+.identity-caption {
+    position: absolute;
+
+    left: 25px;
+    right: 25px;
+    bottom: 22px;
+
+    z-index: 2;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    gap: 25px;
+}
+
+.identity-caption span {
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    color: #dfc083;
+}
+
+.identity-caption p {
+    margin: 0;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 11px;
+    line-height: 1.6;
+
+    text-align: right;
+
+    color: #ffffff;
+}
+
+
+/* ---------------------------------------------------------
+   RESPONSIVE
+--------------------------------------------------------- */
+
+@media (max-width: 850px) {
+
+    .identity-section {
+        padding: 80px 0 90px;
+    }
+
+    .identity-container {
+        grid-template-columns: 1fr;
+
+        gap: 55px;
+    }
+
+    .identity-content {
+        max-width: 700px;
+    }
+
+    .identity-image-wrapper {
+        height: 390px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .identity-section {
+        padding: 65px 0 75px;
+    }
+
+    .identity-container {
+        width: 90%;
+        gap: 40px;
+    }
+
+    .identity-content h2 {
+        font-size: 36px;
+        letter-spacing: -1.5px;
+    }
+
+    .identity-content p {
+        font-size: 13px;
+        line-height: 1.75;
+    }
+
+    .identity-image-wrapper {
+        height: 300px;
+        border-radius: 14px;
+    }
+
+    .identity-caption {
+        left: 18px;
+        right: 18px;
+        bottom: 18px;
+    }
+}
+
+.identity-actions {
+    margin-top: 32px;
+}
+
+.identity-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 20px;
+
+    padding: 16px 18px 16px 24px;
+
+    text-decoration: none;
+
+    border: 1px solid #24140d;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+
+    color: #24140d;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        gap 0.3s ease;
+}
+
+.identity-button span {
+    width: 34px;
+    height: 34px;
+}
+
+.identity-button span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 30px;
+    height: 30px;
+
+    border-radius: 50%;
+
+    background: #24140d;
+    color: #ffffff;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease;
+}
+
+.identity-button i {
+    font-size: 10px;
+}
+
+.identity-button:hover {
+    gap: 23px;
+    background: #24140d;
+    color: #ffffff;
+}
+
+.identity-button:hover span {
+    background: #dfc083;
+    color: #24140d;
+}
+
+/* =========================================================
+   NOTRE HISTOIRE
+========================================================= */
+
+.history-section {
+    position: relative;
+    background: #eee5d7;
+    padding: 110px 0 120px;
+}
+
+.history-container {
+    width: min(1080px, 92%);
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 100px;
+
+    align-items: start;
+}
+
+
+/* =========================================================
+   INTRODUCTION
+========================================================= */
+
+.history-intro {
+    position: sticky;
+    top: 120px;
+}
+
+.history-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-bottom: 22px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+
+    color: #687719;
+}
+
+.history-label span {
+    width: 25px;
+    height: 2px;
+
+    display: block;
+
+    background: #687719;
+}
+
+.history-intro h2 {
+    margin: 0 0 28px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(38px, 4vw, 54px);
+    line-height: 1.05;
+
+    font-weight: 500;
+    letter-spacing: -2px;
+
+    color: #17191d;
+}
+
+.history-intro h2 strong {
+    display: block;
+    font-weight: 700;
+}
+
+.history-intro p {
+    max-width: 440px;
+
+    margin: 0 0 18px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 1.8;
+
+    color: #57514b;
+}
+
+
+/* =========================================================
+   FRISE CHRONOLOGIQUE
+========================================================= */
+
+.history-timeline {
+    position: relative;
+    padding-left: 42px;
+}
+
+
+/* Ligne verticale */
+
+.history-timeline::before {
+    content: "";
+
+    position: absolute;
+
+    left: 8px;
+    top: 8px;
+    bottom: 8px;
+
+    width: 1px;
+
+    background: #9c8b48;
+}
+
+
+/* =========================================================
+   ÉTAPE
+========================================================= */
+
+.history-item {
+    position: relative;
+
+    display: grid;
+    grid-template-columns: 1fr;
+
+    padding: 0 0 48px;
+}
+
+.history-item:last-child {
+    padding-bottom: 0;
+}
+
+
+/* =========================================================
+   CERCLE
+========================================================= */
+
+.history-marker {
+    position: absolute;
+
+    left: -42px;
+    top: 0;
+
+    width: 17px;
+    height: 17px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid #d47c18;
+    border-radius: 50%;
+
+    background: #eee5d7;
+}
+
+.history-marker span {
+    width: 5px;
+    height: 5px;
+
+    border-radius: 50%;
+
+    background: #d47c18;
+}
+
+
+/* =========================================================
+   CONTENU
+========================================================= */
+
+.history-date {
+    margin-bottom: 7px;
+}
+
+.history-date span {
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 9px;
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    color: #8a7a35;
+}
+
+.history-content h3 {
+    margin: 0 0 7px;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 18px;
+    line-height: 1.25;
+
+    font-weight: 700;
+
+    color: #181818;
+}
+
+.history-content p {
+    max-width: 500px;
+
+    margin: 0;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 12px;
+    line-height: 1.65;
+
+    color: #5d5751;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 850px) {
+
+    .history-section {
+        padding: 80px 0 90px;
+    }
+
+    .history-container {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+
+    .history-intro {
+        position: static;
+    }
+
+    .history-intro p {
+        max-width: 650px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .history-section {
+        padding: 65px 0 75px;
+    }
+
+    .history-container {
+        width: 90%;
+        gap: 45px;
+    }
+
+    .history-intro h2 {
+        font-size: 36px;
+        letter-spacing: -1.5px;
+    }
+
+    .history-intro p {
+        font-size: 13px;
+    }
+
+    .history-timeline {
+        padding-left: 35px;
+    }
+
+    .history-marker {
+        left: -35px;
+    }
+
+    .history-content h3 {
+        font-size: 16px;
+    }
+
+    .history-content p {
+        font-size: 11px;
+    }
+}
+
+.history-label {
+    color: #7b6428;
+}
+
+.history-label span {
+    background: #7b6428;
+}
+
+.history-date span {
+    color: #8b6b2f;
+}
+
+.history-timeline::before {
+    background: #a68a4b;
+}
+
+.history-marker {
+    border-color: #c57922;
+}
+
+.history-marker span {
+    background: #c57922;
+}
+
+/* =========================================================
+   NOS VALEURS
+========================================================= */
+
+.values-section {
+    position: relative;
+    background: #e8dfd0;
+    padding: 105px 0 110px;
+}
+
+.values-container {
+    width: min(1080px, 92%);
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.values-header {
+    max-width: 650px;
+    margin-bottom: 65px;
+}
+
+.values-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-bottom: 22px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+
+    color: #687719;
+}
+
+.values-label span {
+    width: 25px;
+    height: 2px;
+
+    display: block;
+
+    background: #687719;
+}
+
+.values-header h2 {
+    margin: 0;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(38px, 4.3vw, 56px);
+    line-height: 1.08;
+
+    font-weight: 500;
+    letter-spacing: -2px;
+
+    color: #17191d;
+}
+
+.values-header h2 strong {
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   GRILLE DES VALEURS
+========================================================= */
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+}
+
+.value-card {
+    position: relative;
+    padding-right: 18px;
+}
+
+.value-line {
+    width: 100%;
+    height: 2px;
+
+    margin-bottom: 15px;
+
+    background: #c77922;
+}
+
+
+/* Couleurs des lignes */
+
+.value-engagement .value-line {
+    background: #c49a3a;
+}
+
+.value-responsabilite .value-line {
+    background: #718126;
+}
+
+.value-savoir-faire .value-line {
+    background: #8c8475;
+}
+
+
+/* =========================================================
+   CONTENU
+========================================================= */
+
+.value-card h3 {
+    margin: 0 0 9px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 1.3;
+
+    font-weight: 700;
+
+    color: #171717;
+}
+
+.value-card p {
+    margin: 0;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    line-height: 1.7;
+
+    color: #59534d;
+}
+
+
+/* =========================================================
+   HOVER
+========================================================= */
+
+.value-card {
+    transition: transform 0.3s ease;
+}
+
+.value-card:hover {
+    transform: translateY(-4px);
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 850px) {
+
+    .values-section {
+        padding: 80px 0 90px;
+    }
+
+    .values-header {
+        margin-bottom: 45px;
+    }
+
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 40px;
+    }
+}
+
+
+@media (max-width: 550px) {
+
+    .values-section {
+        padding: 65px 0 75px;
+    }
+
+    .values-container {
+        width: 90%;
+    }
+
+    .values-header h2 {
+        font-size: 35px;
+        letter-spacing: -1.5px;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .value-card {
+        padding-right: 0;
+    }
+
+    .value-card p {
+        font-size: 12px;
+    }
+}
+
+/* =========================================================
+   NOTRE VISION
+========================================================= */
+
+.vision-section {
+    position: relative;
+    background: #24140d;
+    padding: 115px 0;
+    overflow: hidden;
+}
+
+.vision-container {
+    width: min(1080px, 92%);
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 80px;
+
+    align-items: center;
+}
+
+
+/* =========================================================
+   CONTENU
+========================================================= */
+
+.vision-content {
+    position: relative;
+    z-index: 2;
+}
+
+.vision-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-bottom: 24px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.6px;
+
+    color: #dfc083;
+}
+
+.vision-label span {
+    display: block;
+
+    width: 28px;
+    height: 2px;
+
+    background: #dfc083;
+}
+
+.vision-content h2 {
+    margin: 0 0 28px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(40px, 4.5vw, 60px);
+    line-height: 1.04;
+
+    font-weight: 400;
+    letter-spacing: -2.2px;
+
+    color: #ffffff;
+}
+
+.vision-content h2 strong {
+    display: block;
+
+    font-weight: 700;
+
+    color: #dfc083;
+}
+
+.vision-intro {
+    max-width: 490px;
+
+    margin: 0 0 22px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.75;
+
+    color: #eee7df;
+}
+
+.vision-text {
+    max-width: 500px;
+}
+
+.vision-text p {
+    margin: 0 0 15px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    line-height: 1.8;
+
+    color: #bdb4ac;
+}
+
+
+/* =========================================================
+   SIGNATURE
+========================================================= */
+
+.vision-signature {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    margin-top: 35px;
+}
+
+.vision-signature > span {
+    width: 30px;
+    height: 1px;
+
+    background: #dfc083;
+}
+
+.vision-signature strong {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+
+    color: #dfc083;
+}
+
+.vision-signature small {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 8px;
+    letter-spacing: 1px;
+
+    color: #80756c;
+}
+
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.vision-visual {
+    position: relative;
+
+    height: 560px;
+
+    overflow: hidden;
+
+    border-radius: 3px;
+
+    background: #39251a;
+}
+
+.vision-visual img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.8s ease;
+}
+
+.vision-visual:hover img {
+    transform: scale(1.04);
+}
+
+.vision-overlay {
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(36, 20, 13, 0.05) 35%,
+            rgba(36, 20, 13, 0.75) 100%
+        );
+}
+
+
+/* =========================================================
+   LÉGENDE IMAGE
+========================================================= */
+
+.vision-image-caption {
+    position: absolute;
+
+    left: 28px;
+    right: 28px;
+    bottom: 25px;
+
+    z-index: 2;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+.vision-image-caption > span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+
+    color: #dfc083;
+}
+
+.vision-image-caption p {
+    margin: 0;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    line-height: 1.6;
+
+    text-align: right;
+
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 850px) {
+
+    .vision-section {
+        padding: 85px 0 90px;
+    }
+
+    .vision-container {
+        grid-template-columns: 1fr;
+
+        gap: 55px;
+    }
+
+    .vision-content {
+        max-width: 700px;
+    }
+
+    .vision-visual {
+        height: 430px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .vision-section {
+        padding: 70px 0 75px;
+    }
+
+    .vision-container {
+        width: 90%;
+        gap: 40px;
+    }
+
+    .vision-content h2 {
+        font-size: 36px;
+        letter-spacing: -1.5px;
+    }
+
+    .vision-intro {
+        font-size: 14px;
+    }
+
+    .vision-text p {
+        font-size: 12px;
+    }
+
+    .vision-visual {
+        height: 350px;
+    }
+
+    .vision-image-caption {
+        left: 18px;
+        right: 18px;
+        bottom: 18px;
+    }
+}
+
+/* =========================================================
+   NOTRE MISSION
+========================================================= */
+
+.mission-section {
+    position: relative;
+    background: #f7f1e7;
+    padding: 115px 0 120px;
+    overflow: hidden;
+}
+
+.mission-container {
+    width: min(1080px, 92%);
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.mission-header {
+    max-width: 720px;
+    margin-bottom: 65px;
+}
+
+.mission-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-bottom: 22px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.6px;
+
+    color: #7b6428;
+}
+
+.mission-label span {
+    width: 28px;
+    height: 2px;
+    display: block;
+    background: #7b6428;
+}
+
+.mission-header h2 {
+    margin: 0 0 25px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(40px, 4.5vw, 60px);
+    line-height: 1.04;
+
+    font-weight: 400;
+    letter-spacing: -2.2px;
+
+    color: #17191d;
+}
+
+.mission-header h2 strong {
+    display: block;
+    font-weight: 700;
+    color: #4b2919;
+}
+
+.mission-header > p {
+    max-width: 620px;
+    margin: 0;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 1.8;
+
+    color: #655d55;
+}
+
+
+/* =========================================================
+   GRILLE
+========================================================= */
+
+.mission-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+
+    background: #cfc1ae;
+    border-top: 1px solid #cfc1ae;
+    border-bottom: 1px solid #cfc1ae;
+}
+
+
+/* =========================================================
+   CARTE
+========================================================= */
+
+.mission-card {
+    position: relative;
+
+    min-height: 330px;
+    padding: 32px 25px 30px;
+
+    background: #f7f1e7;
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease;
+}
+
+.mission-card:hover {
+    background: #24140d;
+    transform: translateY(-5px);
+}
+
+.mission-number {
+    position: absolute;
+    top: 28px;
+    right: 24px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+    color: #a99986;
+}
+
+.mission-card:hover .mission-number {
+    color: #dfc083;
+}
+
+
+/* =========================================================
+   ICÔNE
+========================================================= */
+
+.mission-icon {
+    width: 48px;
+    height: 48px;
+
+    margin-bottom: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #c59a55;
+
+    color: #8b682e;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease;
+}
+
+.mission-card:hover .mission-icon {
+    background: #c59a55;
+    color: #24140d;
+}
+
+
+/* =========================================================
+   TITRE
+========================================================= */
+
+.mission-card h3 {
+    margin: 0 0 16px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    line-height: 1.3;
+
+    font-weight: 700;
+    letter-spacing: -0.3px;
+
+    color: #211b17;
+
+    transition: color 0.3s ease;
+}
+
+.mission-card:hover h3 {
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   TEXTE
+========================================================= */
+
+.mission-card p {
+    margin: 0;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    line-height: 1.75;
+
+    color: #686057;
+
+    transition: color 0.3s ease;
+}
+
+.mission-card:hover p {
+    color: #c7bdb4;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .mission-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .mission-card {
+        min-height: 300px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .mission-section {
+        padding: 75px 0 80px;
+    }
+
+    .mission-container {
+        width: 90%;
+    }
+
+    .mission-header {
+        margin-bottom: 45px;
+    }
+
+    .mission-header h2 {
+        font-size: 36px;
+        letter-spacing: -1.5px;
+    }
+
+    .mission-header > p {
+        font-size: 13px;
+    }
+
+    .mission-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .mission-card {
+        min-height: auto;
+        padding: 28px 22px 32px;
+    }
+
+    .mission-icon {
+        margin-bottom: 40px;
+    }
+}
+
+.about-page-hero::before {
+    content: "";
+
+    position: absolute;
+
+    width: 430px;
+    height: 430px;
+
+    right: -170px;
+    top: -250px;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(223, 192, 131, 0.08);
+
+    box-shadow:
+        0 0 100px rgba(171, 96, 25, 0.10);
+}
+
+
+.about-page-hero::after {
+    content: "";
+
+    position: absolute;
+
+    width: 260px;
+    height: 260px;
+
+    right: 30px;
+    top: -120px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(184, 103, 31, 0.15),
+            transparent 68%
+        );
+
+    pointer-events: none;
+}
+
+
+.about-page-hero-container {
+    position: relative;
+
+    z-index: 2;
+
+    width: min(1200px, 92%);
+
+    margin: 0 auto;
+
+    padding: 70px 0 55px;
+}
+
+
+/* =========================================================
+   FIL D'ARIANE
+========================================================= */
+
+.about-breadcrumb {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin-bottom: 27px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.about-breadcrumb a {
+    color: #bdb9bb;
+
+    text-decoration: none;
+
+    transition: color .25s ease;
+}
+
+.about-breadcrumb a:hover {
+    color: #dfc083;
+}
+
+.about-breadcrumb span {
+    color: #777275;
+}
+
+
+
+
+/* =========================================================
+   TITRE
+========================================================= */
+
+.about-page-hero h1 {
+    margin: 0 0 22px;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: clamp(48px, 5.5vw, 72px);
+
+    line-height: .98;
+
+    letter-spacing: -3.5px;
+
+    font-weight: 600;
+
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.about-page-hero-text {
+    max-width: 650px;
+
+    margin: 0;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 16px;
+
+    line-height: 1.75;
+
+    color: #c8c4c5;
+}
+
+
+/* =========================================================
+   INDICATEUR
+========================================================= */
+
+.about-hero-bottom {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-top: 30px;
+}
+
+.about-hero-bottom span {
+    display: block;
+
+    width: 28px;
+    height: 2px;
+
+    background: #dfc083;
+}
+
+.about-hero-bottom p {
+    margin: 0;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+    color: #dfc083;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+
+    .about-page-hero-container {
+        width: 90%;
+
+        padding: 55px 0 50px;
+    }
+
+    .about-breadcrumb {
+        margin-bottom: 24px;
+
+        font-size: 11px;
+    }
+
+    .about-page-hero h1 {
+        margin-bottom: 18px;
+
+        font-size: 39px;
+
+        line-height: 1.02;
+
+        letter-spacing: -1.8px;
+    }
+
+    .about-page-hero-text {
+        font-size: 13px;
+
+        line-height: 1.7;
+    }
+
+}
+
+.about-breadcrumb {
+    position: relative;
+    z-index: 5;
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin-bottom: 27px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.about-breadcrumb a {
+    color: #d0cbca;
+    text-decoration: none;
+
+    transition: color .25s ease;
+}
+
+.about-breadcrumb a:hover {
+    color: #dfc083;
+}
+
+.about-breadcrumb span {
+    color: #918987;
+}
+
+/* =========================================================
+   HERO — QUI SOMMES-NOUS
+========================================================= */
+
+.about-page-hero {
+    position: relative;
+
+    width: 100%;
+    min-height: 390px;
+
+    display: flex;
+    align-items: flex-start;
+
+    box-sizing: border-box;
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 92% 18%,
+            rgba(160, 91, 30, 0.32) 0%,
+            rgba(160, 91, 30, 0.12) 15%,
+            transparent 32%
+        ),
+        linear-gradient(
+            110deg,
+            #211d1e 0%,
+            #242021 52%,
+            #1d1a1b 100%
+        );
+}
+
+
+/* =========================================================
+   HALO DÉCORATIF
+========================================================= */
+
+.about-page-hero::before {
+    content: "";
+
+    position: absolute;
+
+    width: 430px;
+    height: 430px;
+
+    right: -170px;
+    top: -250px;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(223, 192, 131, 0.08);
+
+    box-shadow:
+        0 0 100px rgba(171, 96, 25, 0.10);
+
+    pointer-events: none;
+}
+
+
+.about-page-hero::after {
+    content: "";
+
+    position: absolute;
+
+    width: 260px;
+    height: 260px;
+
+    right: 30px;
+    top: -120px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(184, 103, 31, 0.15),
+            transparent 68%
+        );
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   CONTENEUR
+========================================================= */
+
+.about-page-hero-container {
+    position: relative;
+
+    z-index: 2;
+
+    width: min(1200px, 92%);
+
+    margin: 0 auto;
+
+    /*
+       Le menu est fixe.
+       On réserve donc suffisamment d'espace
+       au-dessus du contenu.
+    */
+    padding-top: 108px;
+    padding-bottom: 55px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   FIL D'ARIANE
+========================================================= */
+
+.about-breadcrumb {
+    position: relative;
+
+    z-index: 5;
+
+    display: flex;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin: 0 0 27px;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 13px;
+
+    line-height: 1.4;
+}
+
+
+/* Accueil */
+
+.about-breadcrumb a {
+    color: #d0cbca;
+
+    text-decoration: none;
+
+    transition: color 0.25s ease;
+}
+
+.about-breadcrumb a:hover {
+    color: #dfc083;
+}
+
+
+/* Séparateurs + L'Entreprise */
+
+.about-breadcrumb span {
+    color: #918987;
+}
+
+
+/* Page actuelle */
+
+.about-breadcrumb strong {
+    color: #ffffff;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   TITRE
+========================================================= */
+
+.about-page-hero h1 {
+    position: relative;
+
+    z-index: 2;
+
+    margin: 0 0 22px;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: clamp(
+        48px,
+        5.5vw,
+        72px
+    );
+
+    font-weight: 600;
+
+    line-height: 0.98;
+
+    letter-spacing: -3.5px;
+
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.about-page-hero-text {
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 650px;
+
+    margin: 0;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 16px;
+
+    line-height: 1.75;
+
+    color: #c8c4c5;
+}
+
+
+/* =========================================================
+   INDICATEUR — L'ENTREPRISE
+========================================================= */
+
+.about-hero-bottom {
+    position: relative;
+
+    z-index: 2;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-top: 30px;
+}
+
+
+.about-hero-bottom span {
+    display: block;
+
+    width: 28px;
+
+    height: 2px;
+
+    background: #dfc083;
+}
+
+
+.about-hero-bottom p {
+    margin: 0;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+    color: #dfc083;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .about-page-hero {
+        min-height: 360px;
+    }
+
+    .about-page-hero-container {
+        width: 90%;
+
+        padding-top: 92px;
+        padding-bottom: 45px;
+    }
+
+    .about-breadcrumb {
+        gap: 7px;
+
+        margin-bottom: 23px;
+
+        font-size: 10px;
+    }
+
+    .about-page-hero h1 {
+        margin-bottom: 18px;
+
+        font-size: 40px;
+
+        line-height: 1.02;
+
+        letter-spacing: -2px;
+    }
+
+    .about-page-hero-text {
+        max-width: 100%;
+
+        font-size: 13px;
+
+        line-height: 1.7;
+    }
+
+    .about-hero-bottom {
+        margin-top: 27px;
+    }
+
+    .about-hero-bottom p {
+        font-size: 9px;
+    }
+
+}

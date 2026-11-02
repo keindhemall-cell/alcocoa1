@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ALCOCOA | Contact</title>
+    <link rel="icon" type="image/png" href="./assets/images/logo.png">
+
+    <meta
+        name="description"
+        content="ALCOCOA, entreprise spécialisée dans la transformation, l'importation et la valorisation du cacao."
+    >
+
+    <!-- Police Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" 
+        rel="stylesheet"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+
+    <!-- Icônes -->
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+</head>
+
+<body>
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header class="header">
+
+        <div class="container nav-container">
+
+            <!-- LOGO -->
+            <a href="index.html" class="logo">
+                <span class="logo-main"><img src="./assets/images/logo.png" alt=""></span>
+                
+            </a>
+
+
+            <!-- MENU -->
+            <nav class="navbar" id="navbar">
+
+                <ul class="nav-menu">
+
+                    <!-- ACCUEIL -->
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">
+                            Accueil
+                        </a>
+                    </li>
+
+
+                    <!-- QUI SOMMES-NOUS -->
+                    <li class="nav-item">
+                        <a href="qui-sommes-nous.html" class="nav-link">
+                            Qui sommes-nous
+                        </a>
+                    </li>
+
+                    <!-- SAVOIR-FAIRE -->
+                    <li class="nav-item">
+                        <a href="savoir-faire.html" class="nav-link">
+                            Savoir-faire
+                        </a>
+                    </li>
+
+                    <!-- PRODUITS -->
+                    <li class="nav-item">
+                        <a href="produits.html" class="nav-link">
+                            Produits
+                        </a>
+                    </li>
+
+                    <!-- CARRIERE & FORMATION -->
+                    <li class="nav-item">
+                        <a href="carriere-formation.html" class="nav-link">
+                            Carrière & Formation
+                        </a>
+                    </li>
+
+
+                    <!-- CONTACT -->
+                    <li class="nav-item">
+
+                        <a href="contact.html" class="nav-link contact-link active">
+                            Contactez-nous
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </nav>
+
+
+            <!-- MENU MOBILE -->
+            <button 
+                class="mobile-menu-btn" 
+                id="mobileMenuBtn"
+                aria-label="Ouvrir le menu"
+            >
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <section class="contact-hero">
+        <div class="contact-hero-overlay"></div>
+        <div class="contact-hero-container">
+            <div class="contact-breadcrumb">
+                <a href="index.html">Accueil</a>
+                <span>/</span>
+                <a href="index.html#entreprise">L'entreprise</a>
+                <span>/</span>
+                <strong>Contact</strong>
+            </div>
+            <div class="contact-hero-content">
+                <h1>Contactez-nous</h1>
+                <p>
+                    Vous avez une question, une demande de partenariat ou besoin d'informations sur nos produits ?
+                    Notre équipe est à votre écoute.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <main>
+
+<section class="contact-section" id="contact">
+
+    <div class="contact-container">
+
+        <!-- EN-TÊTE -->
+        <div class="contact-header">
+
+            <div class="contact-label">
+                <span></span>
+                CONTACTEZ-NOUS
+            </div>
+
+            <div class="contact-heading">
+
+                <h2>
+                    Construisons ensemble<br>
+                    <strong>l'avenir du cacao.</strong>
+                </h2>
+
+                <p>
+                    Vous souhaitez en savoir plus sur nos produits,
+                    nos activités ou établir un partenariat avec
+                    ALCOCOA ? Notre équipe est à votre écoute.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- CONTENU -->
+        <div class="contact-grid">
+
+            <!-- FORMULAIRE -->
+            <div class="contact-form-wrapper">
+
+                <div class="contact-form-top">
+                    <span>01</span>
+                    <h3>Envoyez-nous un message</h3>
+                </div>
+
+                <form class="contact-form">
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+                            <label for="nom">Nom & prénom</label>
+                            <input
+                                type="text"
+                                id="nom"
+                                name="nom"
+                                placeholder="Votre nom"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Adresse e-mail</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="votre@email.com"
+                                required
+                            >
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="entreprise">Entreprise</label>
+                        <input
+                            type="text"
+                            id="entreprise"
+                            name="entreprise"
+                            placeholder="Nom de votre entreprise"
+                        >
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="message">Votre message</label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="5"
+                            placeholder="Comment pouvons-nous vous aider ?"
+                            required
+                        ></textarea>
+                    </div>
+
+
+                    <button type="submit" class="contact-submit">
+                        Envoyer le message
+                        <span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </span>
+                    </button>
+
+                </form>
+
+            </div>
+
+
+            <!-- INFORMATIONS -->
+            <div class="contact-info">
+
+                <div class="contact-info-header">
+                    <span>02</span>
+                    <h3>Nos coordonnées</h3>
+                </div>
+
+
+                <div class="contact-info-list">
+
+                    <!-- ADRESSE -->
+                    <div class="contact-info-item">
+
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+
+                        <div>
+                            <span>SIÈGE SOCIAL</span>
+                            <p>
+                                Abidjan,<br>
+                                Côte d'Ivoire
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <!-- TELEPHONE -->
+                    <div class="contact-info-item">
+
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+
+                        <div>
+                            <span>TÉLÉPHONE</span>
+                            <p>
+                                +225 XX XX XX XX XX
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <!-- EMAIL -->
+                    <div class="contact-info-item">
+
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+
+                        <div>
+                            <span>E-MAIL</span>
+                            <p>
+                                contact@alcocoa.ci
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CTA -->
+                <div class="contact-cta">
+
+                    <div class="contact-cta-icon">
+                        <i class="fa-solid fa-handshake"></i>
+                    </div>
+
+                    <div>
+                        <strong>UN PROJET ?</strong>
+
+                        <p>
+                            Parlons de vos besoins et
+                            construisons une collaboration durable.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <!-- =====================================================
+     FOOTER ALCOCOA
+===================================================== -->
+
+<footer class="alocoa-footer">
+
+    <div class="footer-container">
+
+        <!-- COLONNE 1 : IDENTITÉ -->
+        <div class="footer-brand">
+
+            <a href="index.html" class="footer-logo">
+                <img
+                    src="assets/images/logo-alcocoa.png"
+                    alt="ALCOCOA"
+                >
+            </a>
+
+            <div class="footer-line"></div>
+
+            <p>
+                De la production à la transformation,
+                ALCOCOA contribue à faire vivre et
+                rayonner le cacao ivoirien.
+            </p>
+
+        </div>
+
+
+        <!-- COLONNE 2 : L'ENTREPRISE -->
+        <div class="footer-column">
+
+            <h3>L'ENTREPRISE</h3>
+
+            <ul>
+                <li>
+                    <a href="qui-sommes-nous.html">
+                        Qui sommes-nous
+                    </a>
+                </li>
+
+                <li>
+                    <a href="savoir-faire.html">
+                        Savoir-faire
+                    </a>
+                </li>
+
+                <li>
+                    <a href="carriere.html">
+                        Carrière & Formation
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#champs-usine">
+                        Du champ à l'usine
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#nos-producteurs">
+                        Nos producteurs
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#engagement">
+                        Nos engagements
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+
+
+        <!-- COLONNE 3 : PRODUITS -->
+        <div class="footer-column">
+
+            <h3>NOS PRODUITS</h3>
+
+            <ul>
+                <li>
+                    <a href="produits/masse-cacao.html">
+                        Masse de cacao
+                    </a>
+                </li>
+
+                <li>
+                    <a href="produits/beurre-cacao.html">
+                        Beurre de cacao
+                    </a>
+                </li>
+
+                <li>
+                    <a href="produits/poudre-cacao.html">
+                        Poudre de cacao
+                    </a>
+                </li>
+
+                <li>
+                    <a href="produits/eclats-cacao.html">
+                        Éclats de cacao
+                    </a>
+                </li>
+
+                <li>
+                    <a href="produits/extrait-cacao.html">
+                        Extrait de cacao
+                    </a>
+                </li>
+
+                <li>
+                    <a href="produits.html">
+                        Voir toute la gamme
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+
+
+        <!-- COLONNE 4 : CONTACT -->
+        <div class="footer-column footer-contact">
+
+            <h3>CONTACT</h3>
+
+            <p>
+                Siège social : Abidjan,<br>
+                Côte d'Ivoire
+            </p>
+
+            <p>
+                <a href="tel:+2250000000000">
+                    +225 XX XX XX XX XX
+                </a>
+            </p>
+
+            <p>
+                <a href="mailto:contact@alcocoa.ci">
+                    contact@alcocoa.ci
+                </a>
+            </p>
+
+            <a href="#contact" class="footer-contact-link">
+                Nous contacter
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- LIGNE INFÉRIEURE -->
+
+    <div class="footer-bottom">
+
+        <div class="footer-bottom-container">
+
+            <p>
+                © 2026 ALCOCOA — Tous droits réservés.
+            </p>
+
+            <div class="footer-bottom-links">
+
+                <a href="#">
+                    Actualités
+                </a>
+
+                <a href="#">
+                    Galerie
+                </a>
+
+                <a href="#">
+                    Mentions légales
+                </a>
+
+                <a href="#">
+                    Politique de confidentialité
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+
+    <!-- =====================================================
+     CHATBOT ALCOCOA
+===================================================== -->
+
+<div class="alcocoa-chatbot">
+
+    <!-- Bouton flottant -->
+    <button class="chatbot-toggle" id="chatbotToggle" aria-label="Ouvrir le chatbot">
+
+        <i class="fa-regular fa-message"></i>
+
+        <span class="chatbot-toggle-text">
+            Une question ?
+        </span>
+
+    </button>
+
+
+    <!-- Fenêtre du chatbot -->
+    <div class="chatbot-window" id="chatbotWindow">
+
+        <!-- Header -->
+        <div class="chatbot-header">
+
+            <div class="chatbot-brand">
+
+                <div class="chatbot-logo">
+                    A
+                </div>
+
+                <div>
+                    <strong>ALCOCOA</strong>
+                    <span>Assistant en ligne</span>
+                </div>
+
+            </div>
+
+            <button
+                class="chatbot-close"
+                id="chatbotClose"
+                aria-label="Fermer"
+            >
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+        </div>
+
+
+        <!-- Messages -->
+        <div class="chatbot-messages" id="chatbotMessages">
+
+            <div class="chatbot-message bot">
+
+                <div class="message-avatar">
+                    A
+                </div>
+
+                <div class="message-bubble">
+
+                    Bonjour 👋<br><br>
+
+                    Bienvenue chez <strong>ALCOCOA</strong>.
+                    Comment pouvons-nous vous renseigner ?
+
+                </div>
+
+            </div>
+
+
+            <!-- Questions rapides -->
+            <div class="chatbot-quick-actions">
+
+                <button data-question="Quels sont vos produits ?">
+                    Nos produits
+                </button>
+
+                <button data-question="Parlez-moi de votre importation.">
+                    Importation
+                </button>
+
+                <button data-question="Qui sont vos producteurs ?">
+                    Nos producteurs
+                </button>
+
+                <button data-question="Comment contacter ALCOCOA ?">
+                    Contact
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- Zone de saisie -->
+        <div class="chatbot-input-area">
+
+            <input
+                type="text"
+                id="chatbotInput"
+                placeholder="Écrivez votre question..."
+                autocomplete="off"
+            >
+
+            <button id="chatbotSend" aria-label="Envoyer">
+
+                <i class="fa-solid fa-paper-plane"></i>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+</body>
+</html>
